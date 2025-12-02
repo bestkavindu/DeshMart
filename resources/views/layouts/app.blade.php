@@ -41,7 +41,7 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="/" class="text-white hover:text-purple-300 transition-colors font-medium">Home</a>
-                    <a href="#products" class="text-white hover:text-purple-300 transition-colors font-medium">Products</a>
+                    <a href="{{ route('client.services') }}" class="text-white hover:text-purple-300 transition-colors font-medium">Services</a>
                     <a href="#deals" class="text-white hover:text-purple-300 transition-colors font-medium">Deals</a>
                     <a href="#brands" class="text-white hover:text-purple-300 transition-colors font-medium">Brands</a>
                     <a href="#contact" class="text-white hover:text-purple-300 transition-colors font-medium">Contact</a>
