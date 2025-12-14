@@ -1,14 +1,15 @@
 <?php
 
+use App\Livewire\Client\About;
 use App\Livewire\Client\Home;
 use App\Livewire\Client\Services;
+use App\Livewire\HomePage;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
 use Livewire\Volt\Volt;
 
 
-Route::get('/', Home::class)->name('client.home');
-Route::get('/services', Services::class)->name('client.services');
+Route::get('/', HomePage::class)->name('client.home');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

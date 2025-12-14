@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $title ?? 'DeshaEmart - Phone Shop' }}</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
-
-    <!-- Alpine.js -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-    <!-- Styles -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-    <style>
-        [x-cloak] {
-            display: none !important;
-        }
-    </style>
-
-    @stack('styles')
-</head>
-
-<body class="bg-white antialiased">
-    <!-- Navbar -->
-    <nav x-data="{ mobileMenuOpen: false, searchOpen: false }" x-cloak
+<nav x-data="{ mobileMenuOpen: false, searchOpen: false }" x-cloak
         class="bg-gradient-to-r from-purple-900 via-black to-purple-950 shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -49,7 +20,7 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="/" class="text-white hover:text-purple-300 transition-colors font-medium">Home</a>
-                    <a href="{{ route('client.services') }}"
+                    <a href=""
                         class="text-white hover:text-purple-300 transition-colors font-medium">Services</a>
                     <a href="#deals" class="text-white hover:text-purple-300 transition-colors font-medium">Deals</a>
                     <a href="#brands" class="text-white hover:text-purple-300 transition-colors font-medium">Brands</a>
@@ -194,71 +165,3 @@
             </div>
         </div>
     </nav>
-
-    <!-- Main Content -->
-    <main>
-        {{ $slot }}
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gradient-to-r from-purple-900 via-black to-purple-950 text-white mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <!-- Company Info -->
-                <div>
-                    <h3 class="text-xl font-bold mb-4">DeshaEmart</h3>
-                    <p class="text-gray-300 text-sm">Your trusted phone shop for the latest smartphones and
-                        accessories.</p>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="{{ route('client.about') }}"
-                                class="text-gray-300 hover:text-purple-300 transition-colors">About Us</a></li>
-                        <li><a href="#"
-                                class="text-gray-300 hover:text-purple-300 transition-colors">Products</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-purple-300 transition-colors">Deals</a>
-                        </li>
-                        <li><a href="#"
-                                class="text-gray-300 hover:text-purple-300 transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Customer Service -->
-                <div>
-                    <h4 class="font-semibold mb-4">Customer Service</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="text-gray-300 hover:text-purple-300 transition-colors">Shipping
-                                Info</a></li>
-                        <li><a href="#"
-                                class="text-gray-300 hover:text-purple-300 transition-colors">Returns</a></li>
-                        <li><a href="#"
-                                class="text-gray-300 hover:text-purple-300 transition-colors">Warranty</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-purple-300 transition-colors">FAQ</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Contact -->
-                <div>
-                    <h4 class="font-semibold mb-4">Contact Us</h4>
-                    <ul class="space-y-2 text-sm text-gray-300">
-                        <li>Email: info@deshaemart.com</li>
-                        <li>Phone: +1 234 567 890</li>
-                        <li>Address: 123 Phone Street</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-white/10 mt-8 pt-8 text-center text-sm text-gray-300">
-                <p>&copy; 2025 DeshaEmart. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    @stack('scripts')
-</body>
-
-</html>
