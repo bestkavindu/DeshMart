@@ -20,9 +20,9 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="/" class="text-white hover:text-purple-300 transition-colors font-medium">Home</a>
-                    <a href=""
+                    <a href="{{ route('client.services') }}"
                         class="text-white hover:text-purple-300 transition-colors font-medium">Services</a>
-                    <a href="#deals" class="text-white hover:text-purple-300 transition-colors font-medium">Deals</a>
+                    <a href="{{ route('client.blogs') }}" class="text-white hover:text-purple-300 transition-colors font-medium">Blogs</a>
                     <a href="#brands" class="text-white hover:text-purple-300 transition-colors font-medium">Brands</a>
                     <a href="#contact"
                         class="text-white hover:text-purple-300 transition-colors font-medium">Contact</a>
@@ -113,10 +113,10 @@
             <div class="px-4 py-6 space-y-4">
                 <a href="/"
                     class="block text-white hover:text-purple-300 transition-colors font-medium py-2">Home</a>
-                <a href="#products"
-                    class="block text-white hover:text-purple-300 transition-colors font-medium py-2">Products</a>
-                <a href="#deals"
-                    class="block text-white hover:text-purple-300 transition-colors font-medium py-2">Deals</a>
+                <a href="{{ route('client.services') }}"
+                    class="block text-white hover:text-purple-300 transition-colors font-medium py-2">Services</a>
+                <a href="{{ route('client.blogs') }}"
+                    class="block text-white hover:text-purple-300 transition-colors font-medium py-2">Blogs</a>
                 <a href="#brands"
                     class="block text-white hover:text-purple-300 transition-colors font-medium py-2">Brands</a>
                 <a href="#contact"
