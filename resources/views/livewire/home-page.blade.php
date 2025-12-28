@@ -5,7 +5,7 @@
 
     <!-- What We Do Section -->
     <section class="max-w-7xl mx-auto px-4 bg-gray-50 sm:px-6 lg:px-8 py-16">
-        <div class="text-center mb-16">
+        <div class="text-center mb-16 animate-fade-in-up">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">What We Do</h2>
             <p class="text-gray-600 max-w-2xl mx-auto text-lg mb-8">Professional repair services and accessories for all
                 your
@@ -15,7 +15,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Card 1: Laptop Repairing -->
             <div
-                class="bg-white rounded-[2rem] p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-transform duration-300 border border-gray-50 flex flex-col h-full items-center text-center">
+                class="bg-white rounded-[2rem] p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-2 hover:scale-105 transition-all duration-300 border border-gray-50 flex flex-col h-full items-center text-center animate-fade-in-up animation-delay-100">
                 <div
                     class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mb-6 shrink-0 hover:bg-purple-600 group transition-colors duration-300">
                     <flux:icon.computer-desktop class="size-8 text-purple-600 group-hover:text-white" />
@@ -55,7 +55,7 @@
 
             <!-- Card 2: Mobile Phone Repairing -->
             <div
-                class="bg-white rounded-[2rem] p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-transform duration-300 border border-gray-50 flex flex-col h-full items-center text-center">
+                class="bg-white rounded-[2rem] p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-2 hover:scale-105 transition-all duration-300 border border-gray-50 flex flex-col h-full items-center text-center animate-fade-in-up animation-delay-200">
                 <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mb-6 shrink-0 hover:bg-purple-600 group transition-colors duration-300">
                     <flux:icon.device-phone-mobile class="size-8 text-purple-600 group-hover:text-white" />
                 </div>
@@ -94,7 +94,7 @@
 
             <!-- Card 3: Accessories -->
             <div
-                class="bg-white rounded-[2rem] p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-transform duration-300 border border-gray-50 flex flex-col h-full items-center text-center">
+                class="bg-white rounded-[2rem] p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-2 hover:scale-105 transition-all duration-300 border border-gray-50 flex flex-col h-full items-center text-center animate-fade-in-up animation-delay-300">
                 <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mb-6 shrink-0 hover:bg-purple-600 group transition-colors duration-300">
                     <flux:icon.microphone class="size-8 text-purple-600 group-hover:text-white" />
                 </div>
@@ -133,7 +133,7 @@
 
             <!-- Card 4: Device Setup -->
             <div
-                class="bg-white rounded-[2rem] p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-transform duration-300 border border-gray-50 flex flex-col h-full items-center text-center">
+                class="bg-white rounded-[2rem] p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-2 hover:scale-105 transition-all duration-300 border border-gray-50 flex flex-col h-full items-center text-center animate-fade-in-up animation-delay-400">
                 <div
                     class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mb-6 shrink-0 hover:bg-purple-600 group transition-colors duration-300">
                     <flux:icon.cog-6-tooth
@@ -177,7 +177,7 @@
     <!-- Why Choose Us Section -->
     <section class="py-24 bg-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose Our Service?</h2>
                 <p class="text-lg text-gray-600 leading-relaxed">Built with industry best practices and designed for
                     modern needs that value quality, speed, and reliability.</p>
@@ -185,7 +185,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1: Fast Turnaround (Blue) -->
-                <div class="bg-blue-100 rounded-[2rem] p-8 hover:-translate-y-1 transition-transform duration-300">
+                <div class="bg-blue-100 rounded-[2rem] p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 animate-scale-in animation-delay-100">
                     <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -225,7 +225,7 @@
                 </div>
 
                 <!-- Card 2: Genuine Parts (Green) -->
-                <div class="bg-green-100 rounded-[2rem] p-8 hover:-translate-y-1 transition-transform duration-300">
+                <div class="bg-green-100 rounded-[2rem] p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 animate-scale-in animation-delay-300">
                     <div class="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -264,8 +264,8 @@
                 </div>
 
                 <!-- Card 3: Expert Technicians (Purple) -->
-                <div class="bg-purple-100 rounded-[2rem] p-8 hover:-translate-y-1 transition-transform duration-300">
-                    <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6 shadow-sm">
+                <div class="bg-purple-100 rounded-[2rem] p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 animate-scale-in animation-delay-500">
+                    <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6 shadow-sm animate-float">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
@@ -310,7 +310,7 @@
     <section class="bg-gradient-to-br from-purple-900 via-purple-800 to-black py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 animate-fade-in-up">
                 <span class="inline-block px-4 py-1 bg-purple-500/20 text-purple-300 text-sm font-medium rounded-full mb-4">Testimonials</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">What Our Customers Say</h2>
                 <p class="text-purple-200 max-w-2xl mx-auto text-lg">Don't just take our word for it. Here's what our valued customers have to say about our services.</p>
@@ -319,7 +319,7 @@
             <!-- Reviews Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Review 1 -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 transition-all duration-300">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 hover:-translate-y-1 hover:scale-105 transition-all duration-300 animate-fade-in-up animation-delay-200">
                     <!-- Stars -->
                     <div class="flex gap-1 mb-4">
                         <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -341,7 +341,7 @@
                 </div>
 
                 <!-- Review 2 -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 transition-all duration-300">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 hover:-translate-y-1 hover:scale-105 transition-all duration-300 animate-fade-in-up animation-delay-300">
                     <!-- Stars -->
                     <div class="flex gap-1 mb-4">
                         <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -363,7 +363,7 @@
                 </div>
 
                 <!-- Review 3 -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 transition-all duration-300">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 hover:-translate-y-1 hover:scale-105 transition-all duration-300 animate-fade-in-up animation-delay-400">
                     <!-- Stars -->
                     <div class="flex gap-1 mb-4">
                         <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
@@ -385,7 +385,7 @@
                 </div>
 
                 <!-- Review 4 -->
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 transition-all duration-300">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 hover:-translate-y-1 hover:scale-105 transition-all duration-300 animate-fade-in-up animation-delay-500">
                     <!-- Stars -->
                     <div class="flex gap-1 mb-4">
                         <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
