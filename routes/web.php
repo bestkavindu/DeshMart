@@ -4,6 +4,7 @@ use App\Livewire\Blogs;
 use App\Livewire\Client\About;
 use App\Livewire\Client\Home;
 use App\Livewire\Client\Services;
+use App\Livewire\Contact;
 use App\Livewire\HomePage;
 use App\Livewire\Service;
 use Illuminate\Support\Facades\Route;
@@ -14,6 +15,7 @@ use Livewire\Volt\Volt;
 Route::get('/', HomePage::class)->name('client.home');
 Route::get('/blogs', Blogs::class)->name('client.blogs');
 Route::get('/services', Service::class)->name('client.services');
+Route::get('/contact', Contact::class)->name('client.contact');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

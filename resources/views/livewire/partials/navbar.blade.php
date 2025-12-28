@@ -24,7 +24,7 @@
                         class="text-white hover:text-purple-300 transition-colors font-medium">Services</a>
                     <a href="{{ route('client.blogs') }}" class="text-white hover:text-purple-300 transition-colors font-medium">Blogs</a>
                     <a href="#brands" class="text-white hover:text-purple-300 transition-colors font-medium">Brands</a>
-                    <a href="#contact"
+                    <a href="{{ route('client.contact') }}"
                         class="text-white hover:text-purple-300 transition-colors font-medium">Contact</a>
                 </div>
 
@@ -119,7 +119,7 @@
                     class="block text-white hover:text-purple-300 transition-colors font-medium py-2">Blogs</a>
                 <a href="#brands"
                     class="block text-white hover:text-purple-300 transition-colors font-medium py-2">Brands</a>
-                <a href="#contact"
+                <a href="{{ route('client.contact') }}"
                     class="block text-white hover:text-purple-300 transition-colors font-medium py-2">Contact</a>
 
                 <div class="pt-4 border-t border-white/10 space-y-3">
