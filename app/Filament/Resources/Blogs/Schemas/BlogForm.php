@@ -22,6 +22,8 @@ class BlogForm
                 FileUpload::make('img')
                     ->label('Image')
                     ->image()
+                    ->disk('public')
+                    ->directory('blogs')
                     ->required(),
                 ])
                     ->columns(2)

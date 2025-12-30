@@ -17,6 +17,7 @@ class BlogsTable
         return $table
             ->columns([
                 ImageColumn::make('img')->label('Image')
+                    ->disk('public')
                     ->circular(),
                 TextColumn::make('title')->label('Title')->searchable()->sortable(),
                 TextColumn::make('created_at')

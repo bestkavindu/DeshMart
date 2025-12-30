@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Blog extends Model
 {
@@ -12,4 +13,13 @@ class Blog extends Model
         'img',
         'content',
     ];
+
+    protected function getImageUrlAttribute(): ?string
+    {
+        if (!$this->img) {
+            return null;
+        }
+
+        return Storage::url($this->img);
+    }
 }
