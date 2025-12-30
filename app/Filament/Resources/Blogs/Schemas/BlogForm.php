@@ -2,9 +2,10 @@
 
 namespace App\Filament\Resources\Blogs\Schemas;
 
-use Dom\Text;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Schema;
 
 class BlogForm
@@ -13,13 +14,24 @@ class BlogForm
     {
         return $schema
             ->components([
-                TextInput::make('title')
+                Grid::make()->schema([
+                    TextInput::make('title')
                     ->label('Title')
                     ->required()
                     ->maxLength(255),
-                RichEditor::make('content')
+                FileUpload::make('img')
+                    ->label('Image')
+                    ->image()
+                    ->required(),
+                ])
+                    ->columns(2)
+                    ->columnSpanFull(),
 
-                    ->label('Content')
+                RichEditor::make('content')
+                    ->label('Description')
+                    ->extraAttributes([
+                        'style' => 'min-height: 400px;',
+                    ])
                     ->required(),
             ])->columns(1);
     }
