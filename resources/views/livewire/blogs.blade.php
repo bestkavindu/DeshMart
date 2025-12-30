@@ -69,8 +69,7 @@
                             <img src="{{ $blog->image_url }}" alt="Mobile Phone Tips"
                                 class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
                             <div class="absolute top-4 left-4">
-                                <span class="px-3 py-1 bg-purple-600 text-white text-xs font-medium rounded-full">Tips
-                                    & Tricks</span>
+                                <span class="px-3 py-1 {{ $blog->category->color }} text-white text-xs font-medium rounded-full">{{ $blog->category->name }}</span>
                             </div>
                         </div>
                         <div class="p-6">

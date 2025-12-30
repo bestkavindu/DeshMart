@@ -33,9 +33,9 @@ class BlogCategoriesTableSeeder extends Seeder
                 'id' => 2,
                 'name' => 'Laptop',
                 'slug' => 'laptop',
-                'color' => 'bg-green-200',
+                'color' => 'bg-green-600',
                 'created_at' => '2025-12-30 17:31:01',
-                'updated_at' => '2025-12-30 17:31:01',
+                'updated_at' => '2025-12-30 17:44:49',
             ),
         ));
         
