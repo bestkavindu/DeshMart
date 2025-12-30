@@ -63,42 +63,42 @@
             <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
                 @foreach($blogs as $blog)
                 <!-- Blog Post -->
-                <div class="flex flex-col rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-gray-100">
-                    <div class="flex-shrink-0">
-                        @if($blog->image_url)
-                            <img src="{{ $blog->image_url }}" alt="{{ $blog->title }}" class="h-48 w-full object-cover">
-                        @else
-                            <div class="h-48 w-full bg-purple-100 flex items-center justify-center">
-                                <flux:icon.newspaper class="w-12 h-12 text-purple-400" />
+                                    <article
+                        class="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 border border-gray-50 group">
+                        <div class="relative overflow-hidden">
+                            <img src="{{ $blog->image_url }}" alt="Mobile Phone Tips"
+                                class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-purple-600 text-white text-xs font-medium rounded-full">Tips
+                                    & Tricks</span>
                             </div>
-                        @endif
-                    </div>
-                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                        <div class="flex-1">
-                            <a href="#" class="block mt-2">
-                                <p class="text-xl font-semibold text-gray-900 hover:text-purple-600 transition-colors duration-200">
-                                    {{ $blog->title }}
-                                </p>
-                                <p class="mt-3 text-base text-gray-500">
-                                    {!! \Illuminate\Support\Str::limit(strip_tags($blog->content), 120) !!}
-                                </p>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                                <span class="flex items-center gap-1">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    {{ $blog->created_at->format('M d, Y') }}
+                                </span>
+                            </div>
+                            <h3
+                                class="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors duration-300">
+                                {{ $blog->title }}</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4"> {!! \Illuminate\Support\Str::limit(strip_tags($blog->content), 150) !!}</p>
+                            <a href="#"
+                                class="inline-flex items-center text-purple-600 font-semibold text-sm hover:text-purple-700 transition-colors duration-300">
+                                Read More
+                                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
                             </a>
                         </div>
-                        <div class="mt-6 flex items-center">
-                            <div class="flex-shrink-0">
-                                <div class="h-10 w-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold">
-                                    DE
-                                </div>
-                            </div>
-                            <div class="ml-3">
-                                <p class="text-sm font-medium text-gray-900">Desha Emart</p>
-                                <div class="flex space-x-1 text-sm text-gray-500">
-                                    <time datetime="{{ $blog->created_at->toDateString() }}">{{ $blog->created_at->format('M d, Y') }}</time>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </article>
                 @endforeach
             </div>
 
