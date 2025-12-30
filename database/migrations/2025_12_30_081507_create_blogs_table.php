@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('img');
-            $table->string('content');
+            $table->text('content');
+            $table->foreignId('blog_category_id')->constrained()->onDelete('cascade');
             $table->boolean('is_featured')->default(false);
             $table->boolean('is_published')->default(true);
             $table->timestamps();

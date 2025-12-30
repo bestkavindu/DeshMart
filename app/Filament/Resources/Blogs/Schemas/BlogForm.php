@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Blogs\Schemas;
 
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Section;
@@ -35,6 +36,10 @@ class BlogForm
                         ->label('Featured'),
                     Toggle::make('is_published')
                         ->label('Published'),
+                    Select::make('blog_category_id')
+                        ->label('Category')
+                        ->relationship('category', 'name')
+                        ->required(),
                     FileUpload::make('img')
                             ->label('Image')
                             ->image()

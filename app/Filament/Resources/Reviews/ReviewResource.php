@@ -24,6 +24,7 @@ class ReviewResource extends Resource
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Star;
 
     protected static ?string $recordTitleAttribute = 'Review';
+    protected static ?int $navigationSort = 4;
 
     public static function getNavigationBadge(): ?string
     {

@@ -17,13 +17,14 @@ use UnitEnum;
 
 class BlogResource extends Resource
 {
-    protected static string|UnitEnum|null $navigationGroup = 'Site Content';
+    protected static string|UnitEnum|null $navigationGroup = 'Blogs';
 
     protected static ?string $model = Blog::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Newspaper;
 
     protected static ?string $recordTitleAttribute = 'Blog';
+    protected static ?int $navigationSort = 1;
 
     public static function getNavigationBadge(): ?string
     {
