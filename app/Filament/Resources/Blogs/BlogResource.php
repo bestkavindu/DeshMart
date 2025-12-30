@@ -13,14 +13,22 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use UnitEnum;
 
 class BlogResource extends Resource
 {
+    protected static string|UnitEnum|null $navigationGroup = 'Site Content';
+
     protected static ?string $model = Blog::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::Newspaper;
 
     protected static ?string $recordTitleAttribute = 'Blog';
+
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
 
     public static function form(Schema $schema): Schema
     {
