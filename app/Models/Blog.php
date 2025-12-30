@@ -12,7 +12,11 @@ class Blog extends Model
         'title',
         'img',
         'content',
+        'is_featured',
+        'is_published',
     ];
+
+    
 
     protected function getImageUrlAttribute(): ?string
     {
@@ -22,4 +26,6 @@ class Blog extends Model
 
         return Storage::url($this->img);
     }
+
+
 }

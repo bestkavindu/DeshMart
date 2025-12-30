@@ -7,6 +7,7 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ToggleColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Str;
 
@@ -22,13 +23,10 @@ class BlogsTable
                 TextColumn::make('title')->label('Title')->searchable()->sortable(),
                 TextColumn::make('created_at')
                     ->isoDate('L'),
-
-                TextColumn::make('content')
-                    ->label('Content')
-                    ->html()
-                    ->formatStateUsing(fn ($state) =>
-        Str::limit(strip_tags($state), 100)
-            ),
+                ToggleColumn::make('is_featured')
+                    ->label('Featured'),
+                ToggleColumn::make('is_published')
+                    ->label('Published'),
             ])
             ->filters([
                 //
