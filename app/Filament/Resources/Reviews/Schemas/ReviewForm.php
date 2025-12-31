@@ -36,8 +36,7 @@ class ReviewForm
                         ->label('User Image')
                         ->image()
                         ->disk('public')
-                        ->directory('reviews')
-                        ->required(),
+                        ->directory('reviews'),
                     Toggle::make('is_featured')
                         ->label('Featured'),
                     Toggle::make('status')
