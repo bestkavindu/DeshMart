@@ -363,14 +363,27 @@
                 @endforeach
 
             </div>
+
+            <!-- View All Reviews Button -->
+            <div class="text-center mt-12">
+                <a href="{{ route('client.reviews') }}" wire:navigate
+                    class="inline-flex items-center px-8 py-4 bg-white text-purple-600 font-semibold rounded-full hover:bg-purple-100 transition-colors duration-300 shadow-lg hover:shadow-xl">
+                    Read All Reviews
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+
             <!-- Trust Indicators -->
             <div class="mt-16 flex flex-wrap justify-center items-center gap-8 md:gap-16">
                 <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-1">500+</div>
-                    <div class="text-purple-300 text-sm">Happy Customers</div>
+                    <div class="text-4xl font-bold text-white mb-1">100+</div>
+                    <div class="text-purple-300 text-sm">Reviews</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-1">4.9</div>
+                    <div class="text-4xl font-bold text-white mb-1">5</div>
                     <div class="text-purple-300 text-sm">Average Rating</div>
                 </div>
                 <div class="text-center">
@@ -378,7 +391,7 @@
                     <div class="text-purple-300 text-sm">Years Experience</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-1">1000+</div>
+                    <div class="text-4xl font-bold text-white mb-1">10000+</div>
                     <div class="text-purple-300 text-sm">Repairs Done</div>
                 </div>
             </div>
