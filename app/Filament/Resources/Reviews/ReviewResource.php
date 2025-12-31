@@ -17,7 +17,7 @@ use UnitEnum;
 
 class ReviewResource extends Resource
 {
-    protected static string|UnitEnum|null $navigationGroup = 'Site Content';
+    protected static string|UnitEnum|null $navigationGroup = 'Reviews Management';
 
     protected static ?string $model = Review::class;
 

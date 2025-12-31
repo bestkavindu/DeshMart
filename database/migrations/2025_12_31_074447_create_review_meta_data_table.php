@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('review_meta_data', function (Blueprint $table) {
             $table->id();
+            $table->string('review_count')->nullable();
+            $table->string('average_rating')->nullable();
+            $table->string('years_experience')->nullable();
+            $table->string('repairs_done')->nullable();
             $table->timestamps();
         });
     }

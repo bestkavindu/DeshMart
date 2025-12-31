@@ -13,14 +13,19 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use UnitEnum;
 
 class ReviewMetaDataResource extends Resource
 {
+    protected static string|UnitEnum|null $navigationGroup = 'Reviews Management';
+
     protected static ?string $model = ReviewMetaData::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::CircleStack;
 
     protected static ?string $recordTitleAttribute = 'ReviewMetaData';
+
+     protected static ?int $navigationSort = 5;
 
     public static function form(Schema $schema): Schema
     {
