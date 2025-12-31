@@ -379,19 +379,19 @@
             <!-- Trust Indicators -->
             <div class="mt-16 flex flex-wrap justify-center items-center gap-8 md:gap-16">
                 <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-1">100+</div>
+                    <div class="text-4xl font-bold text-white mb-1">{{ $reviewMetaData->review_count }}+</div>
                     <div class="text-purple-300 text-sm">Reviews</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-1">5</div>
+                    <div class="text-4xl font-bold text-white mb-1">{{ $reviewMetaData->average_rating }}</div>
                     <div class="text-purple-300 text-sm">Average Rating</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-1">5+</div>
+                    <div class="text-4xl font-bold text-white mb-1">{{ $reviewMetaData->years_experience }}+</div>
                     <div class="text-purple-300 text-sm">Years Experience</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-4xl font-bold text-white mb-1">10000+</div>
+                    <div class="text-4xl font-bold text-white mb-1">{{ $reviewMetaData->repairs_done }}+</div>
                     <div class="text-purple-300 text-sm">Repairs Done</div>
                 </div>
             </div>
