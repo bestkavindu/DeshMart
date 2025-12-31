@@ -13,7 +13,7 @@ class HomePage extends Component
     public function mount()
     {
         $this->blogs = Blog::latest()->where('is_featured', true)->where('is_published', true)->take(5)->get();
-        $this->reviews = Review::latest()->where('is_featured', true)->where('status', true)->take(6)->get();
+        $this->reviews = Review::latest()->where('is_featured', true)->where('status', true)->take(9)->get();
     }
     public function render()
     {

@@ -325,11 +325,11 @@
             </div>
 
             <!-- Reviews Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
                 <!-- Review 1 -->
                 @foreach ($reviews as $item)
                     <div
-                        class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 hover:-translate-y-1 hover:scale-105 transition-all duration-300 animate-fade-in-up animation-delay-200">
+                        class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/15 hover:-translate-y-1 hover:scale-105 transition-all duration-300 animate-fade-in-up animation-delay-200 break-inside-avoid">
                         <!-- Stars -->
                         <div class="flex gap-1 mb-4">
                             @for ($i = 0; $i < $item->rating; $i++)
