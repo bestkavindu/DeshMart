@@ -636,7 +636,7 @@
                                 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors duration-300">
                                 {{ $blog->title }}</h3>
                             <p class="text-gray-600 text-sm leading-relaxed mb-4"> {!! \Illuminate\Support\Str::limit(strip_tags($blog->content), 150) !!}</p>
-                            <a href="#"
+                            <a href="{{ route('client.blog.show', $blog) }}" wire:navigate
                                 class="inline-flex items-center text-purple-600 font-semibold text-sm hover:text-purple-700 transition-colors duration-300">
                                 Read More
                                 <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
