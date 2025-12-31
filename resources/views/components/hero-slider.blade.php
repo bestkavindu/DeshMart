@@ -3,28 +3,28 @@
     currentSlide: 0,
     slides: [
         {
-            title: 'iPhone 15 Pro Max',
-            subtitle: 'Titanium. So strong. So light. So Pro.',
-            description: 'Experience the power of A17 Pro chip with stunning display',
-            image: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=1000&auto=format&fit=crop',
-            price: '$1,199',
-            badge: 'New Arrival'
+            title: 'Expert Laptop Repair',
+            subtitle: 'Fast & Reliable Service',
+            description: 'Professional diagnosis and repair for all laptop brands and models.',
+            image: '/images/slider/slider-1.jpg',
+            price: 'From $29',
+            badge: 'Top Service'
         },
         {
-            title: 'Samsung Galaxy S24 Ultra',
-            subtitle: 'Epic in every way',
-            description: '200MP camera, S Pen included, AI-powered features',
-            image: 'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?q=80&w=1000&auto=format&fit=crop',
-            price: '$1,299',
-            badge: 'Best Seller'
+            title: 'Mobile Phone Solutions',
+            subtitle: 'Screen & Battery Replacement',
+            description: 'Get your phone fixed quickly with genuine parts and warranty.',
+            image: '/images/slider/slider-2.jpg',
+            price: 'From $19',
+            badge: 'Express Repair'
         },
         {
-            title: 'Google Pixel 8 Pro',
-            subtitle: 'The best of Google AI',
-            description: 'Incredible camera with Magic Editor and enhanced features',
-            image: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=1000&auto=format&fit=crop',
-            price: '$999',
-            badge: 'Hot Deal'
+            title: 'Premium Accessories',
+            subtitle: 'Enhance Your Experience',
+            description: 'Wide range of high-quality accessories for your devices.',
+            image: '/images/slider/slider-3.jpg',
+            price: 'Best Prices',
+            badge: 'New Arrivals'
         }
     ],
     autoplay: null,
@@ -79,16 +79,16 @@ class="relative w-full h-[600px] md:h-[700px] overflow-hidden rounded-3xl shadow
             <div class="relative h-full flex items-center px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
                 <div class="max-w-2xl space-y-6">
                     <!-- Badge -->
-                    <div x-show="currentSlide === index"
+                    {{-- <div x-show="currentSlide === index"
                          x-transition:enter="transition ease-out duration-700 delay-200"
                          x-transition:enter-start="opacity-0 -translate-x-4"
                          x-transition:enter-end="opacity-100 translate-x-0">
                         <span class="inline-block px-5 py-2 bg-purple-600 text-white text-xs md:text-sm font-bold rounded-full shadow-lg uppercase tracking-wider"
                               x-text="slide.badge"></span>
-                    </div>
+                    </div> --}}
 
                     <!-- Title -->
-                    <h1 x-show="currentSlide === index"
+                    {{-- <h1 x-show="currentSlide === index"
                         x-transition:enter="transition ease-out duration-700 delay-300"
                         x-transition:enter-start="opacity-0 -translate-x-8"
                         x-transition:enter-end="opacity-100 translate-x-0"
@@ -103,19 +103,19 @@ class="relative w-full h-[600px] md:h-[700px] overflow-hidden rounded-3xl shadow
                        x-transition:enter-end="opacity-100 translate-x-0"
                        class="text-xl md:text-2xl lg:text-3xl text-purple-300 font-semibold"
                        x-text="slide.subtitle">
-                    </p>
+                    </p> --}}
 
-                    <!-- Description -->
+                    {{-- <!-- Description -->
                     <p x-show="currentSlide === index"
                        x-transition:enter="transition ease-out duration-700 delay-500"
                        x-transition:enter-start="opacity-0 -translate-x-8"
                        x-transition:enter-end="opacity-100 translate-x-0"
                        class="text-base md:text-lg text-gray-300 leading-relaxed"
                        x-text="slide.description">
-                    </p>
+                    </p> --}}
 
                     <!-- Price and Button -->
-                    <div x-show="currentSlide === index"
+                    {{-- <div x-show="currentSlide === index"
                          x-transition:enter="transition ease-out duration-700 delay-600"
                          x-transition:enter-start="opacity-0 -translate-x-8"
                          x-transition:enter-end="opacity-100 translate-x-0"
@@ -131,7 +131,7 @@ class="relative w-full h-[600px] md:h-[700px] overflow-hidden rounded-3xl shadow
                                 </svg>
                             </span>
                         </button>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
