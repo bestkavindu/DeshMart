@@ -17,6 +17,8 @@ return new class extends Migration
             $table->text('content');
             $table->integer('rating');
             $table->text('user_img');
+            $table->boolean('is_featured')->default(false);
+            $table->boolean('status')->default(true);
             $table->timestamps();
         });
     }

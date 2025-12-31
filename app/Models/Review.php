@@ -11,5 +11,7 @@ class Review extends Model
         'content',
         'rating',
         'user_img',
+        'is_featured',
+        'status',
     ];
 }
