@@ -12,8 +12,8 @@ class HomePage extends Component
     public $reviews;
     public function mount()
     {
-        $this->blogs = Blog::latest()->where('is_featured', true)->take(5)->get();
-        $this->reviews = Review::latest()->take(5)->get();
+        $this->blogs = Blog::latest()->where('is_featured', true)->where('is_published', true)->take(5)->get();
+        $this->reviews = Review::latest()->where('is_featured', true)->where('status', true)->take(6)->get();
     }
     public function render()
     {
