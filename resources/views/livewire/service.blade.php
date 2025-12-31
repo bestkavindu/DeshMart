@@ -12,9 +12,9 @@
     </div>
 
     <!-- Services Grid -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white" id="services">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8" >
                 <!-- Laptop Repair -->
                 <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                     <div class="p-8">

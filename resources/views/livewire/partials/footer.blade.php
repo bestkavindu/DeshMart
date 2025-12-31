@@ -12,13 +12,13 @@
                 <div>
                     <h4 class="font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href=""
-                                class="text-gray-300 hover:text-purple-300 transition-colors">About Us</a></li>
-                        <li><a href="#"
-                                class="text-gray-300 hover:text-purple-300 transition-colors">Products</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-purple-300 transition-colors">Deals</a>
+                        <li><a href="{{ route('client.services') }}" wire:navigate
+                                class="text-gray-300 hover:text-purple-300 transition-colors">Services</a></li>
+                        <li><a href="{{ route('client.blogs') }}" wire:navigate
+                                class="text-gray-300 hover:text-purple-300 transition-colors">Blogs</a></li>
+                        <li><a href="{{ route('client.reviews') }}" wire:navigate class="text-gray-300 hover:text-purple-300 transition-colors">Reviews</a>
                         </li>
-                        <li><a href="#"
+                        <li><a href="{{ route('client.contact') }}" wire:navigate
                                 class="text-gray-300 hover:text-purple-300 transition-colors">Contact</a></li>
                     </ul>
                 </div>
@@ -27,14 +27,12 @@
                 <div>
                     <h4 class="font-semibold mb-4">Customer Service</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="text-gray-300 hover:text-purple-300 transition-colors">Shipping
-                                Info</a></li>
-                        <li><a href="#"
-                                class="text-gray-300 hover:text-purple-300 transition-colors">Returns</a></li>
-                        <li><a href="#"
-                                class="text-gray-300 hover:text-purple-300 transition-colors">Warranty</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-purple-300 transition-colors">FAQ</a>
-                        </li>
+                        <li><a href="{{ route('client.services') }}/#services" class="text-gray-300 hover:text-purple-300 transition-colors">Laptop Repair
+                                </a></li>
+                        <li><a href="{{ route('client.services') }}/#services"
+                                class="text-gray-300 hover:text-purple-300 transition-colors">Mobile Repair</a></li>
+                        <li><a href="{{ route('client.services') }}/#services"
+                                class="text-gray-300 hover:text-purple-300 transition-colors">Accessories</a></li>
                     </ul>
                 </div>
 
