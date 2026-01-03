@@ -31,7 +31,7 @@
             </div>
 
             <!-- Right Side Icons -->
-            <div class="hidden md:flex items-center space-x-4">
+            {{-- <div class="hidden md:flex items-center space-x-4">
                 <!-- Search Button -->
                 <button @click="searchOpen = !searchOpen" class="text-white hover:text-purple-300 transition-colors">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,7 +69,7 @@
                         @endif
                     @endauth
                 @endif
-            </div>
+            </div> --}}
 
             <!-- Mobile Menu Button -->
             <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden text-white">
