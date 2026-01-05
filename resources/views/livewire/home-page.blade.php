@@ -344,7 +344,7 @@
                         <!-- Customer Info -->
                         <div class="flex items-center gap-4">
                             @if ($item->user_img)
-                                <img src="{{ $item->user_img }}" alt="Customer"
+                                <img src="{{ Storage::url($item->user_img) }}" alt="Customer"
                                     class="w-12 h-12 rounded-full object-cover ring-2 ring-purple-400">
                             @else
                                 <div
